@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.nIMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,18 +79,18 @@
             this.phoneMhsDataGridViewTextBoxColumn,
             this.iDUserDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.mahasiswaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(296, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(53, 66);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(804, 300);
             this.dataGridView1.TabIndex = 0;
             // 
             // nIMDataGridViewTextBoxColumn
             // 
             this.nIMDataGridViewTextBoxColumn.DataPropertyName = "NIM";
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.MistyRose;
-            this.nIMDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.MistyRose;
+            this.nIMDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle19;
             this.nIMDataGridViewTextBoxColumn.HeaderText = "NIM";
             this.nIMDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nIMDataGridViewTextBoxColumn.Name = "nIMDataGridViewTextBoxColumn";
@@ -99,8 +99,8 @@
             // namaMhsDataGridViewTextBoxColumn
             // 
             this.namaMhsDataGridViewTextBoxColumn.DataPropertyName = "NamaMhs";
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.SeaShell;
-            this.namaMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.SeaShell;
+            this.namaMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
             this.namaMhsDataGridViewTextBoxColumn.HeaderText = "NamaMhs";
             this.namaMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.namaMhsDataGridViewTextBoxColumn.Name = "namaMhsDataGridViewTextBoxColumn";
@@ -109,8 +109,8 @@
             // alamatMhsDataGridViewTextBoxColumn
             // 
             this.alamatMhsDataGridViewTextBoxColumn.DataPropertyName = "AlamatMhs";
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.alamatMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.alamatMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle21;
             this.alamatMhsDataGridViewTextBoxColumn.HeaderText = "AlamatMhs";
             this.alamatMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.alamatMhsDataGridViewTextBoxColumn.Name = "alamatMhsDataGridViewTextBoxColumn";
@@ -119,8 +119,8 @@
             // sexDataGridViewTextBoxColumn
             // 
             this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.DarkKhaki;
-            this.sexDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.DarkKhaki;
+            this.sexDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle22;
             this.sexDataGridViewTextBoxColumn.HeaderText = "Sex";
             this.sexDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
@@ -129,8 +129,8 @@
             // phoneMhsDataGridViewTextBoxColumn
             // 
             this.phoneMhsDataGridViewTextBoxColumn.DataPropertyName = "PhoneMhs";
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.LightCyan;
-            this.phoneMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.LightCyan;
+            this.phoneMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle23;
             this.phoneMhsDataGridViewTextBoxColumn.HeaderText = "PhoneMhs";
             this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
@@ -139,8 +139,8 @@
             // iDUserDataGridViewTextBoxColumn
             // 
             this.iDUserDataGridViewTextBoxColumn.DataPropertyName = "IDUser";
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Thistle;
-            this.iDUserDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.Thistle;
+            this.iDUserDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle24;
             this.iDUserDataGridViewTextBoxColumn.HeaderText = "IDUser";
             this.iDUserDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDUserDataGridViewTextBoxColumn.Name = "iDUserDataGridViewTextBoxColumn";

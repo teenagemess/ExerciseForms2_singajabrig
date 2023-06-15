@@ -45,13 +45,28 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.prodiTIDataSet1 = new ExerciseForms2.ProdiTIDataSet1();
+            this.nilaiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nilaiTableAdapter = new ExerciseForms2.ProdiTIDataSet1TableAdapters.NilaiTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.BindingSource = this.nilaiBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -178,24 +193,133 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Text = "IDNilai";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 163);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 16);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "NIM";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 214);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 16);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "KodeMK";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 262);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 16);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Nilai";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(32, 316);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 16);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "IDPeriode";
+            // 
+            // textBox1
+            // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource, "IDNilai", true));
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nilaiBindingSource, "IDNilai", true));
+            this.textBox1.Location = new System.Drawing.Point(162, 115);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(325, 22);
+            this.textBox1.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource, "NIM", true));
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nilaiBindingSource, "NIM", true));
+            this.textBox2.Location = new System.Drawing.Point(162, 163);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(325, 22);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource, "KodeMK", true));
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nilaiBindingSource, "KodeMK", true));
+            this.textBox3.Location = new System.Drawing.Point(162, 214);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(325, 22);
+            this.textBox3.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource, "Nilai", true));
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nilaiBindingSource, "Nilai", true));
+            this.textBox4.Location = new System.Drawing.Point(162, 262);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(325, 22);
+            this.textBox4.TabIndex = 10;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.nilaiBindingSource, "IDPeriode", true));
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nilaiBindingSource, "IDPeriode", true));
+            this.textBox5.Location = new System.Drawing.Point(162, 310);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(325, 22);
+            this.textBox5.TabIndex = 11;
+            // 
+            // prodiTIDataSet1
+            // 
+            this.prodiTIDataSet1.DataSetName = "ProdiTIDataSet1";
+            this.prodiTIDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nilaiBindingSource
+            // 
+            this.nilaiBindingSource.DataMember = "Nilai";
+            this.nilaiBindingSource.DataSource = this.prodiTIDataSet1;
+            // 
+            // nilaiTableAdapter
+            // 
+            this.nilaiTableAdapter.ClearBeforeFill = true;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nilaiBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +342,17 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private ProdiTIDataSet1 prodiTIDataSet1;
+        private System.Windows.Forms.BindingSource nilaiBindingSource;
+        private ProdiTIDataSet1TableAdapters.NilaiTableAdapter nilaiTableAdapter;
     }
 }
