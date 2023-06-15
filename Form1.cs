@@ -15,13 +15,9 @@ namespace ExerciseForms2
         public Form1()
         {
             InitializeComponent();
-            this.FormClosed += Form2_FormClosed;
+   
         }
 
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
